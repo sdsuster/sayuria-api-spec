@@ -1,0 +1,197 @@
+{
+    "mappings":[
+        {
+            "request": {
+                "method": "GET",
+                "url": "/api/products/id1"
+            },
+            "response": {
+                "status": 200,
+                "jsonBody": 
+                {
+                    "code":200,
+                    "status": "OK",
+                    "data": {
+                        "id":"id1",
+                        "name": "Kubis",
+                        "price": 34000,
+                        "discount": 10,
+                        "unit": "Kg",
+                        "photoUrl": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568",
+                        "store":{
+                            "id":"idtoko1",
+                            "name":"Toko Buani",
+                            "photoUrl": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568",
+                            "nProducts": 65
+                        }
+                    },
+                    "paging": null,
+                    "errors":null
+                },
+                "headers": {
+                    "Content-Type": "application/json"
+                }
+            }
+        },
+        {
+            "request":{
+                "method":"POST",
+                "url": "/api/products"
+            },
+            "response": {
+                "status": 200,
+                "jsonBody": {
+                    "code":200,
+                    "status": "OK",
+                    "data": {
+                        "id":"id1",
+                        "name": "Kubis",
+                        "price": 34000,
+                        "discount": 10,
+                        "unit": "Kg",
+                        "photoUrl": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568",
+                        "store":{
+                            "id":"idtoko1",
+                            "name":"Toko Buani",
+                            "photoUrl": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568",
+                            "nProducts": 65
+                        }
+                    },
+                    "paging": null,
+                    "errors":null
+                },
+                "headers": {
+                    "Content-Type": "application/json"
+                }
+            }
+        },
+        {
+            "request":{
+                "method":"PUT",
+                "url": "/api/products/id1"
+            },
+            "response": {
+                "status": 200,
+                "jsonBody": {
+                    "code":200,
+                    "status": "OK",
+                    "data": {
+                        "id":"id1",
+                        "name": "Kubis",
+                        "price": 35000,
+                        "discount": 20,
+                        "unit": "Kg",
+                        "photoUrl": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568",
+                        "store":{
+                            "id":"idtoko1",
+                            "name":"Toko Buani",
+                            "photoUrl": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568",
+                            "nProducts": 65
+                        }
+                    },
+                    "paging": null,
+                    "errors":null
+                },
+                "headers": {
+                    "Content-Type": "application/json"
+                }
+            }
+        },
+        {
+            "request":{
+                "method":"DELETE",
+                "url": "/api/products/id1"
+            },
+            "response": {
+                "status": 200,
+                "jsonBody": {
+                    "id":"id1",
+                    "name": "Kubis",
+                    "price": 34000,
+                    "discount": 10,
+                    "unit": "Kg",
+                    "photoUrl": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568",
+                    "store":{
+                        "id":"idtoko1",
+                        "name":"Toko Buani",
+                        "photoUrl": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568",
+                        "nProducts": 65
+                    }
+                },
+                "headers": {
+                    "Content-Type": "application/json"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "url": "/api/products"
+            },
+            "response": {
+                "status": 200,
+                "jsonBody": [
+                    {
+                        "id":"id1",
+                        "name": "Kubis",
+                        "price": 34000,
+                        "discount": 10,
+                        "unit": "Kg",
+                        "photoUrl": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568",
+                        "store":{
+                            "id":"idtoko1",
+                            "name":"Toko Buani",
+                            "photoUrl": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568",
+                            "nProducts": 65
+                        }
+                    },
+                    {
+                        "id":"id1",
+                        "name": "Kubis",
+                        "price": 34000,
+                        "discount": 0,
+                        "unit": "Kg",
+                        "photoUrl": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568",
+                        "store":{
+                            "id":"idtoko1",
+                            "name":"Toko Buani",
+                            "photoUrl": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568",
+                            "nProducts": 65
+                        }
+                    },
+                    {
+                        "id":"id1",
+                        "name": "Kubis",
+                        "price": 34000,
+                        "discount": 0,
+                        "unit": "Kg",
+                        "photoUrl": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568",
+                        "store":{
+                            "id":"idtoko1",
+                            "name":"Toko Buani",
+                            "photoUrl": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568",
+                            "nProducts": 65
+                        }
+                    },
+                    {
+                        "id":"id1",
+                        "name": "Kubis",
+                        "price": 34000,
+                        "discount": 10,
+                        "unit": "Kg",
+                        "photoUrl": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568",
+                        "store":{
+                            "id":"idtoko1",
+                            "name":"Toko Buani",
+                            "photoUrl": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568",
+                            "nProducts": 65
+                        }
+                    }
+                ],
+                "headers": {
+                    "Content-Type": "application/json"
+                }
+            }
+        }
+    ]
+}

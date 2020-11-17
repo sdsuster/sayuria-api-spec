@@ -1,0 +1,137 @@
+{
+    "mappings":[
+        {
+            "request": {
+                "method": "GET",
+                "url": "/api/categories/id1"
+            },
+            "response": {
+                "status": 200,
+                "jsonBody": {
+                    "code":200,
+                    "status": "OK",
+                    "data": {
+                        "id":"id1",
+                        "name":"Sayuran",
+                        "photoUrl": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568"
+                    },
+                    "paging": null,
+                    "errors":null
+                },
+                "headers": {
+                    "Content-Type": "application/json"
+                }
+            }
+        },
+        {
+            "request":{
+                "method":"POST",
+                "url": "/api/categories"
+            },
+            "response": {
+                "status": 200,
+                "jsonBody": {
+                    "code":200,
+                    "status": "OK",
+                    "data": {
+                        "id":"id1",
+                        "name":"Sayuran",
+                        "photoUrl": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568"
+                    },
+                    "paging": null,
+                    "errors":null
+                },
+                "headers": {
+                    "Content-Type": "application/json"
+                }
+            }
+        },
+        {
+            "request":{
+                "method":"PUT",
+                "url": "/api/categories/id1"
+            },
+            "response": {
+                "status": 200,
+                "jsonBody": {
+                    "code":200,
+                    "status": "OK",
+                    "data": {
+                        "id":"id1",
+                        "name":"Sayuran 23",
+                        "photoUrl": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568"
+                    },
+                    "paging": null,
+                    "errors":null
+                },
+                "headers": {
+                    "Content-Type": "application/json"
+                }
+            }
+        },
+        {
+            "request":{
+                "method":"DELETE",
+                "url": "/api/categories/id1"
+            },
+            "response": {
+                "status": 200,
+                "jsonBody": {
+                    "code":200,
+                    "status": "OK",
+                    "data": {
+                        "id":"id1",
+                        "name":"Sayuran",
+                        "photoUrl": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568"
+                    },
+                    "paging": null,
+                    "errors":null
+                },
+                "headers": {
+                    "Content-Type": "application/json"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "url": "/api/categories"
+            },
+            "response": {
+                "status": 200,
+                
+                "jsonBody": {
+                    "code":200,
+                    "status": "OK",
+                    "data": [
+                        {
+                            "id":"id1",
+                            "name":"Sayuran",
+                            "photoUrl": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568"
+                        },
+                        {
+                            "id":"id1",
+                            "name":"Sayuran",
+                            "photoUrl": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568"
+                        },
+                        {
+                            "id":"id1",
+                            "name":"Sayuran",
+                            "photoUrl": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568"
+                        },
+                        {
+                            "id":"id1",
+                            "name":"Sayuran",
+                            "photoUrl": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568"
+                        }
+                    ],
+                    "paging": null,
+                    "errors":null
+                },
+                "headers": {
+                    "Content-Type": "application/json"
+                }
+            }
+        }
+    ]
+}

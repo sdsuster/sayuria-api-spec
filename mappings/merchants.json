@@ -1,0 +1,145 @@
+{
+    "mappings":[
+        {
+            "request": {
+                "method": "GET",
+                "url": "/api/merchants/idtoko1"
+            },
+            "response": {
+                "status": 200,
+                "jsonBody": {
+                    "code":200,
+                    "status": "OK",
+                    "data": {
+                        "id":"idtoko1",
+                        "name":"Toko Buani",
+                        "photoUrl": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568",
+                        "nProducts": 65
+                    },
+                    "paging": null,
+                    "errors":null
+                },
+                "headers": {
+                    "Content-Type": "application/json"
+                }
+            }
+        },
+        {
+            "request":{
+                "method":"POST",
+                "url": "/api/merchants"
+            },
+            "response": {
+                "status": 200,
+                "jsonBody": {
+                    "code":200,
+                    "status": "OK",
+                    "data": {
+                        "id":"idtoko1",
+                        "name":"Toko Buani",
+                        "photoUrl": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568",
+                        "nProducts": 65
+                    },
+                    "paging": null,
+                    "errors":null
+                },
+                "headers": {
+                    "Content-Type": "application/json"
+                }
+            }
+        },
+        {
+            "request":{
+                "method":"PUT",
+                "url": "/api/merchants/id1"
+            },
+            "response": {
+                "status": 200,
+                "jsonBody": {
+                    "code":200,
+                    "status": "OK",
+                    "data": {
+                        "id":"idtoko1",
+                        "name":"Toko Buana",
+                        "photoUrl": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568",
+                        "nProducts": 65
+                    },
+                    "paging": null,
+                    "errors":null
+                },
+                "headers": {
+                    "Content-Type": "application/json"
+                }
+            }
+        },
+        {
+            "request":{
+                "method":"DELETE",
+                "url": "/api/merchants/id1"
+            },
+            "response": {
+                "status": 200,
+                "jsonBody": {
+                    "code":200,
+                    "status": "OK",
+                    "data": {
+                        "id":"idtoko1",
+                        "name":"Toko Buani",
+                        "photoUrl": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568",
+                        "nProducts": 65
+                    },
+                    "paging": null,
+                    "errors":null
+                },
+                "headers": {
+                    "Content-Type": "application/json"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "url": "/api/merchants"
+            },
+            "response": {
+                "status": 200,
+                
+                "jsonBody": {
+                    "code":200,
+                    "status": "OK",
+                    "data": [
+                        {
+                            "id":"idtoko1",
+                            "name":"Toko Buani",
+                            "photoUrl": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568",
+                            "nProducts": 65
+                        },
+                        {
+                            "id":"idtoko1",
+                            "name":"Toko Buani",
+                            "photoUrl": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568",
+                            "nProducts": 65
+                        },
+                        {
+                            "id":"idtoko1",
+                            "name":"Toko Buani",
+                            "photoUrl": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568",
+                            "nProducts": 65
+                        },
+                        {
+                            "id":"idtoko1",
+                            "name":"Toko Buani",
+                            "photoUrl": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568",
+                            "nProducts": 65
+                        }
+                    ],
+                    "paging": null,
+                    "errors":null
+                },
+                "headers": {
+                    "Content-Type": "application/json"
+                }
+            }
+        }
+    ]
+}
