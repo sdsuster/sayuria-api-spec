@@ -28,7 +28,7 @@ api/auth
 # Error Response
 ```json
 {
-	"code": 402,
+	"code": 401,
 	"status": "UNAUTHORIZED",
 	"errors": null
 }
@@ -57,6 +57,13 @@ api/auth
 api/auth
 ## HTTP Method
 `POST`
+## Request Body
+```json
+{
+  "email":"sjovianto@gmail.com",
+  "password":"rahasia"
+}
+```
 ## Success Response
 ```json
 {
@@ -82,7 +89,7 @@ api/auth
 # Error Response
 ```json
 {
-	"code": 402,
+	"code": 401,
 	"status": "UNAUTHORIZED",
 	"errors": {
     "msg":["username atau password tidak sesuai"]

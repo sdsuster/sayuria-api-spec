@@ -19,7 +19,8 @@ api/transactions/history
                 "id": "id2",
                 "title": "Kubis",
                 "image": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568"
-            }
+            },
+            "otherProducts":3,
         },
         {
             "id": "id1",
