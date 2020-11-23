@@ -26,6 +26,15 @@ api/user/profile
 api/user/profile
 ## HTTP Method
 `PUT`
+## Request Body
+```json
+{
+    "name": "Jo Vianto1",
+    "phone":"09012819281211",
+    "birthDay": "1999-08-24T0:0:0.511Z",
+    "gender": false,
+}
+```
 ## Success Response
 ```json
 {
@@ -51,9 +60,24 @@ api/user/profile
 	"status": "BAD_REQUEST",
 	"errors": {
         "name":["Nama tidak boleh kosong!"],
-        "email":["Email tidak boleh kosong!", "Email tidak valid!"],
         "birthDay":["Tanggal Lahir tidak boleh kosong!"],
         "phone": ["Nomor telepon minimal 10 digit dan maksimal 15 digit"]
 	}
+}
+```
+
+
+## Request Body - Multipart File
+
+# **Get User Detail**
+## Endpoint
+api/user/profile/upload-photo
+## HTTP Method
+`POST`
+## Success Response
+```json
+{
+    "code":200,
+    "status": "OK",
 }
 ```

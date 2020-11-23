@@ -72,6 +72,13 @@ api/maps/detail/{id_order}
 api/maps/current/{id_order}
 ## HTTP Method
 `POST`
+## Request Body
+```json
+{
+  "lat": 2,
+  "lng": 1
+}
+```
 ## Success Response
 ```json
 {

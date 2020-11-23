@@ -56,8 +56,24 @@ api/merchant/products
 # **Create Merchant's Products**
 ## Endpoint
 api/merchant/products
+
 ## HTTP Method
 `POST`
+## Request Body
+```json
+{   
+    "name": "Kubis",
+    "price": 34000,
+    "discount": 10,
+    "stock": 30,
+    "unit": "Kg",
+    "image": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568",
+    "category":{
+        "id":"id1",
+        "name": "Sayur"
+    }
+}
+```
 ## Success Response
 ```json
 {
@@ -85,7 +101,18 @@ api/merchant/products
     }
 }
 ```
-
+## Request Body
+```json
+{   
+    "name": "",
+    "price": -10,
+    "discount": -10,
+    "stock": -1,
+    "unit": "Kg",
+    "image": "bytes[]",
+    "categoryId":"id1"
+}
+```
 # Error Response
 ```json
 {
@@ -94,6 +121,7 @@ api/merchant/products
 	"errors": {
         "name":["Nama produk tidak boleh kosong!"],
         "price":["Harga harus lebih dari 0!"],
+        "discount": ["Discount tidak boleh kurang dari 0!"],
         "stock": ["Stock tidak boleh kurang dari 0!"],
         "unit": ["Unit tidak boleh kosong!"],
         "category": ["Kategori tidak ditemukan"]
@@ -105,8 +133,24 @@ api/merchant/products
 # **Edit Merchant's Products**
 ## Endpoint
 api/merchant/products/{id}
+
 ## HTTP Method
 `PUT`
+## Request Body
+```json
+{   
+    "name": "Kubis",
+    "price": 34000,
+    "discount": 10,
+    "stock": 30,
+    "unit": "Kg",
+    "image": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568",
+    "category":{
+        "id":"id1",
+        "name": "Sayur"
+    }
+}
+```
 ## Success Response
 ```json
 {
@@ -115,7 +159,7 @@ api/merchant/products/{id}
   "data": 
     {   
         "id":"id1",
-        "name": "Kubisss",
+        "name": "Kubis",
         "price": {
             "original": 34000,
             "discount": {
@@ -125,16 +169,27 @@ api/merchant/products/{id}
             "final": 30600
         },
         "stock": 30,
-        "unit": "Ons",
+        "unit": "Kg",
         "image": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568",
         "category":{
             "id":"id1",
-            "name": "Sayurrrr"
+            "name": "Sayur"
         }
     }
 }
 ```
-
+## Request Body
+```json
+{   
+    "name": "",
+    "price": -10,
+    "discount": -10,
+    "stock": -1,
+    "unit": "Kg",
+    "image": "bytes[]",
+    "categoryId":"id1"
+}
+```
 # Error Response
 ```json
 {
@@ -143,13 +198,13 @@ api/merchant/products/{id}
 	"errors": {
         "name":["Nama produk tidak boleh kosong!"],
         "price":["Harga harus lebih dari 0!"],
+        "discount": ["Discount tidak boleh kurang dari 0!"],
         "stock": ["Stock tidak boleh kurang dari 0!"],
         "unit": ["Unit tidak boleh kosong!"],
         "category": ["Kategori tidak ditemukan"]
 	}
 }
 ```
-
 # **Delete Merchant's Products**
 ## Endpoint
 api/merchant/products/{id}

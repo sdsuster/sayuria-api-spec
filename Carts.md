@@ -51,6 +51,13 @@ api/carts
 api/carts
 ## HTTP Method
 `POST`
+## Request Body
+```json
+{
+    "idProduct":"id1",
+    "totalItem":2
+}
+```
 ## Success Response
 ```json
 {
@@ -119,8 +126,13 @@ api/carts
     }
 }
 ```
-
-
+## Request Body
+```json
+{
+    "idProduct":"",
+    "totalItem":-2
+}
+```
 # Error Response
 ```json
 {
@@ -133,11 +145,18 @@ api/carts
 }
 ```
 
+## Request Body
+```json
+{
+    "idProduct":"id0",
+    "totalItem":20
+}
+```
 # Error Response
 ```json
 {
 	"code": 404,
-	"status": "BAD_REQUEST",
+	"status": "NOT_FOUND",
 	"errors": {
         "message":["Produk tidak ditemukan!"],
 	}
@@ -147,9 +166,15 @@ api/carts
 
 # **Edit Users Cart**
 ## Endpoint
-api/carts
+api/carts/{order_id}
 ## HTTP Method
 `PUT`
+## Request Body
+```json
+{
+    "totalItem":2
+}
+```
 ## Success Response
 ```json
 {
@@ -247,25 +272,22 @@ api/carts
 ```
 
 
-# Error Response
+## Request Body
 ```json
 {
-	"code": 400,
-	"status": "BAD_REQUEST",
-	"errors": {
-        "productId":["ID produk tidak boleh kosong!"],
-        "totalItem":["total item harus lebih dari 0!"],
-	}
+    "orderId":"",
+    "totalItem":-1
 }
 ```
 
 # Error Response
 ```json
 {
-	"code": 404,
+	"code": 400,
 	"status": "BAD_REQUEST",
 	"errors": {
-        "message":["Produk tidak ditemukan!"],
+        "orderId":["ID produk tidak boleh kosong!"],
+        "totalItem":["total item harus lebih dari 0!"],
 	}
 }
 ```
@@ -273,7 +295,7 @@ api/carts
 
 # **Add Users Cart**
 ## Endpoint
-api/carts/{id}
+api/carts/{order_id}
 ## HTTP Method
 `DELETE`
 ## Success Response
@@ -282,41 +304,38 @@ api/carts/{id}
   "code": 200,
   "status": "OK",
   "data": 
-    [   
-        
-        {
-            "merchant":{
+    {
+        "orders":[
+            {   
                 "id":"id1",
-                "name":"Buani"
-            },
-            "products":[
-                {   
+                "product":{
                     "id":"id1",
-                    "product":{
-                        "id":"id1",
-                        "name": "Kubis",
-                        "price": {
-                            "original": 34000,
-                            "discount": {
-                                "value": 10,
-                                "unit":"percentage"
-                            },
-                            "final": 30600
+                    "name": "Kubis",
+                    "price": {
+                        "original": 34000,
+                        "discount": {
+                            "value": 10,
+                            "unit":"percentage"
                         },
-                        "stock": 30,
-                        "unit": "Kg",
-                        "image": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568",
-                        "category":{
-                            "id":"id1",
-                            "name": "Sayur"
-                        }
+                        "final": 30600
                     },
-                    "totalItem": 3
-                }
-            ],
-            "totalPrice": 999999,
-            "totalItems": 1,
-        }
-    ]
+                    "stock": 30,
+                    "unit": "Kg",
+                    "image": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568",
+                    "category":{
+                        "id":"id1",
+                        "name": "Sayur"
+                    },
+                    "merchant":{
+                        "id":"id1",
+                        "name":"Buani"
+                    },
+                },
+                "totalItem": 3
+            },
+        ],
+        "totalPrice": 999999,
+        "totalItems": 1,
+    }
 }
 ```

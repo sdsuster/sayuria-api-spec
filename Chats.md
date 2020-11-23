@@ -3,6 +3,15 @@
 -
 ## HTTP Method
 `-`
+
+## Request Body
+```json
+{
+  "message": "pesan",
+  "attachment": "url",
+  "type":"image"
+}
+```
 ## Success Response
 ```json
 {
@@ -10,7 +19,7 @@
   "status": "OK",
   "data": 
     {   "from":"alex",
-        "attachment":"",
+        "attachment":"url",
         "type":"image",
         "message":"pesan"  
     }
