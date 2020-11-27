@@ -31,7 +31,7 @@ api/homepage/banners
 
 # **Get Homepage Recommendation**
 ## Endpoint
-api/homepage/product-recomendations
+api/homepage/product-recommendations
 ## HTTP Method
 `GET`
 ## Success Response

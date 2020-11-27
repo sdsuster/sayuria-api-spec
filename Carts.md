@@ -114,7 +114,7 @@ api/carts
                         "name": "Sayur"
                     },
                     "merchant":{
-                        "id":"id1",
+                        "id":"id2",
                         "name":"Buani"
                     },
                 },
@@ -258,7 +258,7 @@ api/carts/{order_id}
                         "name": "Sayur"
                     },
                     "merchant":{
-                        "id":"id1",
+                        "id":"id2",
                         "name":"Buani"
                     },
                 },

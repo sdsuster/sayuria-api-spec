@@ -15,17 +15,17 @@
                         {
                             "id": "id1",
                             "title": "title",
-                            "image": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568"
+                            "image": "https://www.static-src.com/siva/asset//11_2020/HALODOC-desktop.png?output-format=webp"
                         },
                         {
                             "id": "id2",
                             "title": "title2",
-                            "image": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568"
+                            "image": "https://www.static-src.com/siva/asset//11_2020/816x379_Carousel_Desktop_Train_nov_2-new.jpg?output-format=webp"
                         },
                         {
                             "id": "id3",
                             "title": "title3",
-                            "image": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568"
+                            "image": "https://www.static-src.com/siva/asset//11_2020/KKB-BCA-NOUSPdesktop.jpg?output-format=webp"
                         }
                     ]
                 },
@@ -37,7 +37,7 @@
         {
             "request": {
                 "method": "GET",
-                "url": "/api/homepage/product-recomendations"
+                "url": "/api/homepage/product-recommendations"
             },
             "response": {
                 "status": 200,
@@ -48,7 +48,7 @@
                     "data": [
                         {
                             "id":"id1",
-                            "name": "Kubis",
+                            "name": "Kubis Kubis Kubis Kubis Kubis ",
                             "price": {
                                 "original": 34000,
                                 "discount": {

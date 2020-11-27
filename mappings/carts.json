@@ -10,44 +10,66 @@
                 "jsonBody": {
                     "code":200,
                     "status": "OK",
-                    "data": [{
-                        "id":"id1",
-                        "product":{
-                            "id":"id1",
-                            "name": "Kubis",
-                            "harga": 34000,
-                            "discount": 10,
-                            "stock": 30,
-                            "unit": "Kg",
-                            "photoUrl": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568",
-                            "store":{
-                                "id":"idtoko1",
-                                "name":"Toko Buani",
-                                "photoUrl": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568",
-                                "nProducts": 65
+                    "data": {
+                        "orders":[
+                            {   
+                                "id":"id1",
+                                "product":{
+                                    "id":"id1",
+                                    "name": "Kubis",
+                                    "price": {
+                                        "original": 34000,
+                                        "discount": {
+                                            "value": 10,
+                                            "unit":"percentage"
+                                        },
+                                        "final": 30600
+                                    },
+                                    "stock": 30,
+                                    "unit": "Kg",
+                                    "image": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568",
+                                    "category":{
+                                        "id":"id1",
+                                        "name": "Sayur"
+                                    },
+                                    "merchant":{
+                                        "id":"id1",
+                                        "name":"Buani"
+                                    }
+                                },
+                                "totalItem": 3
+                            },
+                            {   
+                                "id":"id1",
+                                "product":{
+                                    "id":"id1",
+                                    "name": "Kubis",
+                                    "price": {
+                                        "original": 34000,
+                                        "discount": {
+                                            "value": 10,
+                                            "unit":"percentage"
+                                        },
+                                        "final": 30600
+                                    },
+                                    "stock": 30,
+                                    "unit": "Kg",
+                                    "image": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568",
+                                    "category":{
+                                        "id":"id1",
+                                        "name": "Sayur"
+                                    },
+                                    "merchant":{
+                                        "id":"id2",
+                                        "name":"Buani"
+                                    }
+                                },
+                                "totalItem": 2
                             }
-                        },
-                        "totalItem": 3
+                        ],
+                        "totalPrice": 999999,
+                        "totalItems": 1
                     },
-                    {
-                        "id":"id1",
-                        "product":{
-                            "id":"id1",
-                            "name": "Kubis",
-                            "harga": 34000,
-                            "discount": 10,
-                            "stock": 30,
-                            "unit": "Kg",
-                            "photoUrl": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568",
-                            "store":{
-                                "id":"idtoko1",
-                                "name":"Toko Buani",
-                                "photoUrl": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568",
-                                "nProducts": 65
-                            }
-                        },
-                        "totalItem": 3
-                    }],
                     "paging": null,
                     "errors":null
                 },
@@ -66,63 +88,93 @@
                 "jsonBody": {
                     "code":200,
                     "status": "OK",
-                    "data": [{
-                        "id":"id1",
-                        "product":{
-                            "id":"id1",
-                            "name": "Kubis",
-                            "harga": 34000,
-                            "discount": 10,
-                            "stock": 30,
-                            "unit": "Kg",
-                            "photoUrl": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568",
-                            "store":{
-                                "id":"idtoko1",
-                                "name":"Toko Buani",
-                                "photoUrl": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568",
-                                "nProducts": 65
+                    "data": {
+                        "orders":[
+                            {   
+                                "id":"id1",
+                                "product":{
+                                    "id":"id1",
+                                    "name": "Kubis",
+                                    "price": {
+                                        "original": 34000,
+                                        "discount": {
+                                            "value": 10,
+                                            "unit":"percentage"
+                                        },
+                                        "final": 30600
+                                    },
+                                    "stock": 30,
+                                    "unit": "Kg",
+                                    "image": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568",
+                                    "category":{
+                                        "id":"id1",
+                                        "name": "Sayur"
+                                    },
+                                    "merchant":{
+                                        "id":"id1",
+                                        "name":"Buani"
+                                    }
+                                },
+                                "totalItem": 3
+                            },
+                            {   
+                                "id":"id1",
+                                "product":{
+                                    "id":"id1",
+                                    "name": "Kubis",
+                                    "price": {
+                                        "original": 34000,
+                                        "discount": {
+                                            "value": 10,
+                                            "unit":"percentage"
+                                        },
+                                        "final": 30600
+                                    },
+                                    "stock": 30,
+                                    "unit": "Kg",
+                                    "image": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568",
+                                    "category":{
+                                        "id":"id1",
+                                        "name": "Sayur"
+                                    },
+                                    "merchant":{
+                                        "id":"id1",
+                                        "name":"Buani"
+                                    }
+                                },
+                                "totalItem": 2
+                            },
+                            {   
+                                "id":"id1",
+                                "product":{
+                                    "id":"id1",
+                                    "name": "Kubis",
+                                    "price": {
+                                        "original": 34000,
+                                        "discount": {
+                                            "value": 10,
+                                            "unit":"percentage"
+                                        },
+                                        "final": 30600
+                                    },
+                                    "stock": 30,
+                                    "unit": "Kg",
+                                    "image": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568",
+                                    "category":{
+                                        "id":"id1",
+                                        "name": "Sayur"
+                                    },
+                                    "merchant":{
+                                        "id":"id2",
+                                        "name":"Buani"
+                                    }
+                                },
+                                "totalItem": 2
                             }
-                        },
-                        "totalItem": 3
+                        ],
+                        "totalPrice": 999999,
+                        "totalItems": 1
                     },
-                    {
-                        "id":"id1",
-                        "product":{
-                            "id":"id1",
-                            "name": "Kubis",
-                            "harga": 34000,
-                            "discount": 10,
-                            "stock": 30,
-                            "unit": "Kg",
-                            "photoUrl": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568",
-                            "store":{
-                                "id":"idtoko1",
-                                "name":"Toko Buani",
-                                "photoUrl": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568",
-                                "nProducts": 65
-                            }
-                        },
-                        "totalItem": 3
-                    },
-                    {
-                        "id":"id1",
-                        "product":{
-                            "id":"id1",
-                            "name": "Kubis",
-                            "harga": 34000,
-                            "discount": 10,
-                            "stock": 30,
-                            "unit": "Kg",
-                            "photoUrl": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568",
-                            "store":{
-                                "id":"idtoko1",
-                                "name":"Toko Buani",
-                                "photoUrl": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568",
-                                "nProducts": 65
-                            }
-                        },
-                        "totalItem": 3
-                    }],
                     "paging": null,
                     "errors":null
                 },
@@ -141,44 +193,41 @@
                 "jsonBody": {
                     "code":200,
                     "status": "OK",
-                    "data": [{
-                        "id":"id1",
-                        "product":{
-                            "id":"id1",
-                            "name": "Kubis",
-                            "harga": 34000,
-                            "discount": 10,
-                            "stock": 30,
-                            "unit": "Kg",
-                            "photoUrl": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568",
-                            "store":{
-                                "id":"idtoko1",
-                                "name":"Toko Buani",
-                                "photoUrl": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568",
-                                "nProducts": 65
+                    "data": {
+                        
+                        "orders":[
+                            {   
+                                "id":"id1",
+                                "product":{
+                                    "id":"id1",
+                                    "name": "Kubis",
+                                    "price": {
+                                        "original": 34000,
+                                        "discount": {
+                                            "value": 10,
+                                            "unit":"percentage"
+                                        },
+                                        "final": 30600
+                                    },
+                                    "stock": 30,
+                                    "unit": "Kg",
+                                    "image": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568",
+                                    "category":{
+                                        "id":"id1",
+                                        "name": "Sayur"
+                                    },
+                                    "merchant":{
+                                        "id":"id1",
+                                        "name":"Buani"
+                                    }
+                                },
+                                "totalItem": 3
                             }
-                        },
-                        "totalItem": 5
+                        ],
+                        "totalPrice": 999999,
+                        "totalItems": 1
+                        
                     },
-                    {
-                        "id":"id1",
-                        "product":{
-                            "id":"id1",
-                            "name": "Kubis",
-                            "harga": 34000,
-                            "discount": 10,
-                            "stock": 30,
-                            "unit": "Kg",
-                            "photoUrl": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568",
-                            "store":{
-                                "id":"idtoko1",
-                                "name":"Toko Buani",
-                                "photoUrl": "https://cf.shopee.co.id/file/36a1b98600e602908a7b01cde5703568",
-                                "nProducts": 65
-                            }
-                        },
-                        "totalItem": 3
-                    }],
                     "paging": null,
                     "errors":null
                 },
